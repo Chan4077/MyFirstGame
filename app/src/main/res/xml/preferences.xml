@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_cateogry_general">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_achdialog"
+            android:summary="@string/pref_achdialog_summary"
+            android:title="@string/pref_achdialog_text"/>
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_themes"
+            android:entryValues="@array/pref_themes_id"
+            android:key="theme"
+            android:title="@string/pref_themes_text"
+            android:summary="@string/pref_themes_summary"/>
+    </PreferenceCategory>
+</PreferenceScreen>

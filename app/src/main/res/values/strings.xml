@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <!--Preferences-->
+    <string name="pref_cateogry_general">General</string>
+    <string name="pref_achdialog_text">Show achievements</string>
+    <string name="pref_achdialog_summary">Shows the achievement dialog when you do a certain action. (Default: true)</string>
+    <string name="pref_themes_text">App Theme</string>
+    <string name="pref_themes_summary">Sets the theme for the app. (Default: "Indigo-pink")</string>
+    <string name="pref_themes_default">1</string>
+    <string name="action_help">Help</string>
+    <string-array name="pref_themes">
+        <item>Indigo-pink</item>
+        <item>Purple-green</item>
+        <item>Yellow-orange</item>
+    </string-array>
+    <string-array name="pref_themes_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!-- Sidenav -->
+    <string name="nav_one">One Die</string>
+    <string name="nav_two">Two Dice</string>
+    <string name="nav_three">Three Dice</string>
+    <string name="action_share_app">Share This App</string>
+    <!--Share dialog-->
+    <string name="share_intent_value">Share this app to&#8230;</string>
+</resources>

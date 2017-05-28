@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/one_dice_select"
+              android:title="@string/nav_one"
+              android:icon="@drawable/ic_numeric_1_box_black_24dp" />
+        <item android:id="@+id/two_dice_select"
+              android:title="@string/nav_two"
+              android:icon="@drawable/ic_numeric_2_box_black_24dp" />
+        <item android:id="@+id/three_dice_select"
+              android:title="@string/nav_three"
+              android:icon="@drawable/ic_numeric_3_box_black_24dp" />
+    </group>
+</menu>
