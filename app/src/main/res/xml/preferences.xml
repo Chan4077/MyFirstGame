@@ -14,7 +14,31 @@
             android:entries="@array/pref_themes"
             android:entryValues="@array/pref_themes_id"
             android:key="theme"
-            android:title="@string/pref_themes_text"
-            android:summary="@string/pref_themes_summary"/>
+            android:summary="@string/pref_themes_summary"
+            android:title="@string/pref_themes_text"/>
     </PreferenceCategory>
+    <PreferenceScreen
+        android:summary="View more info about the app"
+        android:title="About">
+        <Preference
+            android:summary="View app releases on Github"
+            android:title="App Version (v1.2.1)">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Chan4077/MyFirstGame/releases"/>
+        </Preference>
+        <Preference
+            android:summary="View source code on Github"
+            android:title="Github">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Chan4077/MyFirstGame"/>
+        </Preference>
+        <Preference
+            android:summary="View Chan4077 on Github"
+            android:title="App author">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Chan4077"/>
+        </Preference>
+    </PreferenceScreen>
 </PreferenceScreen>

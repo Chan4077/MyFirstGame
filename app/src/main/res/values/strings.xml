@@ -26,5 +26,5 @@
     <string name="nav_three">Three Dice</string>
     <string name="action_share_app">Share This App</string>
     <!--Share dialog-->
-    <string name="share_intent_value">Share this app to&#8230;</string>
+    <string name="share_intent_value">Share this app via&#8230;</string>
 </resources>

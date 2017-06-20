@@ -1,6 +1,6 @@
 package com.edricchan.myfirstgame;
 
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -152,7 +152,13 @@ public class MainActivityFragment extends Fragment {
                         out.println("User clicked no.");
                     }
                 });
-        AlertDialog alert1 = builder.create();
+        final AlertDialog alert1 = builder.create();
+        alert1.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialog) {
+                alert1.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.red));
+            }
+        });
         alert1.show();
     }
 

@@ -9,6 +9,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +23,7 @@ import static java.lang.System.out;
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -34,10 +36,15 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MainActivityFragment()).commit();
         configureNav();
+        NotificationCompat.Builder mBuilder1 = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.ic_numeric_1_box_black_24dp)
+                .setContentTitle("Dice Roller: Get more achievements")
+                .setContentText("Click this notification to get a bonus achievement! :)");
     }
 
     /**
      * Configuration of the sidenav
+     *
      * @return void
      * @since 1.2.1
      */
@@ -51,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment f = null;
                 int itemId = item.getItemId();
 
-                switch(itemId) {
+                switch (itemId) {
                     case R.id.one_dice_select:
                         // TODO: Complete this
                         f = new MainActivityFragment();
@@ -78,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);

@@ -9,14 +9,15 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryPurple"
         android:minHeight="?android:attr/actionBarSize"
-        android:theme="@style/AppTheme.NoActionBar"
+        android:theme="@style/PurpleGreenTheme.NoActionBar"
         app:contentInsetEnd="0dp"
         app:contentInsetLeft="0dp"
         app:contentInsetRight="0dp"
         app:contentInsetStart="16dp"
-        app:popupTheme="@style/AppTheme"/>
+        app:popupTheme="@style/PurpleGreenTheme"
+        android:elevation="4dp"/>
 
 
     <FrameLayout
